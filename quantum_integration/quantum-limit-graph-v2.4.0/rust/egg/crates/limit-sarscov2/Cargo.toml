@@ -1,0 +1,25 @@
+# crates/limit-sarscov2/Cargo.toml
+[package]
+name = "limit-sarscov2"
+version = "2.4.1"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+anyhow = "1"
+thiserror = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+axum = "0.7"
+tower = "0.4"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+ndarray = "0.15"
+regex = "1"
+chrono = { version = "0.4", features = ["serde"] }
+
+# Internal crates
+limit-core = { path = "../limit-core" }
+limit-storage = { path = "../limit-storage" }
+limit-orchestration = { path = "../limit-orchestration" }
