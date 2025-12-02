@@ -311,9 +311,9 @@ See [LICENSE](../../LICENSE) for details.
 ```bibtex
 @software{limit_sarscov2_2024,
   title={LIMIT-SARSCOV2: Multi-Intent Knowledge Graph for SARS-CoV-2 Research},
-  author={Quantum LIMIT Graph Team},
-  year={2024},
-  url={https://github.com/yourusername/quantum-limit-graph}
+  author={Quantum LIMIT Graph and AI Research Agent Team},
+  year={2025},
+  url={https://github.com/NurcholishAdam/quantum-limit-graph}
 }
 ```
 
