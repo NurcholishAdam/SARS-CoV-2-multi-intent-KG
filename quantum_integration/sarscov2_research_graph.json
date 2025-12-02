@@ -1,0 +1,86 @@
+{
+  "id": "6478a658-32fd-4474-b4a9-d6638c301a85",
+  "nodes": {},
+  "edges": {
+    "37133502-3f0e-446c-98d7-96415b6e784f": {
+      "id": "37133502-3f0e-446c-98d7-96415b6e784f",
+      "edge_type": "Causal",
+      "source_id": "98c30dee-ae8c-4fb1-8c70-eac7a4faf32c",
+      "target_id": "bed6a7ef-17c4-4418-b8b1-81c267ae6e33",
+      "label": "L452R mutation \u2192 antibody evasion",
+      "weight": 0.87,
+      "source_domain": "Genomics",
+      "target_domain": "Immunology",
+      "evidence_refs": [
+        "doi:10.1038/s41586-022-04980-y"
+      ],
+      "confidence": 0.87
+    }
+  },
+  "hypothesis_paths": [],
+  "serendipity_traces": [
+    {
+      "id": "b817e301-5dc8-4fd0-8bde-2d55f330269f",
+      "session_id": "2a3de79f-34b2-4e6e-bcb1-887204494377",
+      "question": "BA.5 mutations increase ACE2 binding",
+      "steps": [
+        {
+          "id": "c63205c5-4d7c-4afc-879b-482e3ce116c9",
+          "step_number": 1,
+          "hypothesis": "Transmissibility",
+          "query": "BA.5 mutations increase ACE2 binding",
+          "domains_explored": [
+            "Genomics",
+            "Virology"
+          ],
+          "evidence_found": 13,
+          "confidence": 0.95,
+          "timestamp": "2025-12-02T07:19:04.377574Z"
+        }
+      ],
+      "total_evidence": 13,
+      "cross_domain_jumps": 0
+    }
+  ],
+  "rd_curves": {
+    "vaccine_efficacy": {
+      "points": [
+        {
+          "rate": 5.0,
+          "distortion": 0.85
+        },
+        {
+          "rate": 10.0,
+          "distortion": 0.7
+        },
+        {
+          "rate": 15.0,
+          "distortion": 0.55
+        },
+        {
+          "rate": 20.0,
+          "distortion": 0.4
+        },
+        {
+          "rate": 25.0,
+          "distortion": 0.25
+        },
+        {
+          "rate": 30.0,
+          "distortion": 0.10000000000000009
+        }
+      ]
+    }
+  },
+  "statistics": {
+    "total_nodes": 0,
+    "total_edges": 1,
+    "causal_edges": 1,
+    "correlative_edges": 0,
+    "cross_domain_edges": 1,
+    "hypothesis_paths": 0,
+    "serendipity_traces": 1,
+    "rd_curves": 1,
+    "domains_covered": 0
+  }
+}
