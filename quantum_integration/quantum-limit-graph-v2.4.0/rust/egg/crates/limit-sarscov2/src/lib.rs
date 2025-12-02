@@ -1,0 +1,24 @@
+pub mod domain;
+pub mod nodes;
+pub mod queries;
+pub mod provenance;
+pub mod retrieval;
+pub mod metrics;
+pub mod rd;
+pub mod governance;
+pub mod api;
+pub mod multi_intent_graph;
+pub mod serendipity_trace;
+pub mod edges;
+
+pub use domain::{ResearchDomain, SarsCov2Graph};
+pub use nodes::{VirusNode, VirologyNode, ImmunologyNode, GenomicsNode, TreatmentNode, PublicHealthNode};
+pub use queries::{IntentQuery, MultiIntentQuestion, QueryPlan};
+pub use provenance::{ProvenanceNote, GovernanceTag};
+pub use retrieval::{CorpusDoc, RetrievalBackend};
+pub use metrics::{DomainCoverage, Serendipity, SARSCoV2Metrics};
+pub use rd::{RDPoint, RDCurve, rd_from_batches};
+pub use governance::{EvidenceThresholds, GovernanceDecision, check_merge_allowed};
+pub use multi_intent_graph::{MultiIntentGraph, HypothesisPath, IntentNode};
+pub use serendipity_trace::{SerendipityTrace, ExplorationStep, HypothesisType};
+pub use edges::{EdgeType, CausalEdge, CorrelativeEdge, GraphEdge};
